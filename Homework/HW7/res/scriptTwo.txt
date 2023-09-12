@@ -1,0 +1,9 @@
+load res/cape.png
+color grayscale
+save
+layer res/grayscale_cape.png
+filter sharpen 0
+layer add milo.ppm
+layer remove 1
+saveas ppm
+quit

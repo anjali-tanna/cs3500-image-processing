@@ -1,0 +1,7 @@
+load res/cape.jpg
+color sepia
+save
+load res/milo.ppm
+filter blur
+save
+quit

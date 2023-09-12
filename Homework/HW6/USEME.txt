@@ -1,0 +1,46 @@
+Astitva Asthana and Anjali Tanna HW06
+Created on 06/19/2021.
+
+Supported commands:
+
+***NOTE: Once a file or layered image is loaded, it is assumed that any future filters, transformations, and/or save operations are being done onto this file.
+
+"load" + " " + specific filename --> loads an image into the editor
+"save" --> saves the current file or "project" being worked on
+"color sepia" --> applies the sepia color transformation to the image being worked on.
+"color grayscale" --> applies the grayscale color transformation to the image being worked on.
+"filter blur" --> applies the blur filter to the image being worked on.
+"filter sharpen" --> applies the sharpen filter to the image being worked on.
+"layer remove" + " " + number --> removes layer number from the layered image.
+"layer" + " " + specific filename --> creates a layered image out of the file created, and makes the layered image the project being worked on.
+"layer add" + " " + specific filename --> adds the given file to the end of the layers in the layered image.
+"layer" + " " + "color grayscale" + number --> applies the grayscale color transformation to the layer number.
+"layer" + " " + "color sepia" + number --> applies the sepia color transformation to the layer number.
+"layer" + " " + "filter blur" + number --> applies the blur filter to the layer number.
+"layer" + " " + "filter sharpen" + number --> applies the sharpen filter to the layer number.
+"saveas" + "ppm" or "png" or "jpg" --> saves the image being worked on as the file type provided, or saves the topmost layer of the layered image as the filetype.
+"quit" --> quits the editor.
+
+Example:
+
+load res/cape.jpg
+color sepia
+save
+load res/milo.ppm
+filter blur
+save
+quit
+
+Example 2:
+
+load res/cape.png
+color grayscale
+save
+layer res/grayscale_cape.png
+filter sharpen 0
+layer add milo.ppm
+layer remove 1
+saveas ppm
+quit
+
+	
